@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/soleil">
+
+
+    <!-- Titre de la ville -->
+    <TextView
+        android:id="@+id/city_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Bordeaux"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Température -->
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="64sp"
+        android:text="@string/degre"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="130dp"/>
+
+    <!-- Barre de recherche -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/textResearch"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:layout_margin="16dp" />
+
+    <!-- Texte -->
+    <TextView
+        android:id="@+id/texte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textChangment"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
